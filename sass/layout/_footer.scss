@@ -1,0 +1,54 @@
+.foot {
+    background-color: var(--hero-footer-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.logo-contacts {
+    margin-right: 70px;
+}
+
+.address-link {
+    display: block;
+    font-style: normal;
+    /*исходный текст был курсивным, поэтому поставила font-style: normal */
+    line-height: 1.71;
+    text-decoration: none;
+    color: var(--primary-white-color);
+    transition: color var(--transition-dur-fun);
+}
+
+.items-footer:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer {
+    display: flex;
+    align-items: baseline;
+}
+
+
+.footer-link {
+    display: block;
+    line-height: 1.71;
+    font-style: normal;
+    /*исходный текст был курсивным, поэтому поставила font-style: normal */
+    color: var(--grey-shadow);
+
+    transition: color var(--transition-dur-fun);
+}
+
+.network {
+    color: var(--primary-white-color);
+    margin-bottom: 20px;
+}
+
+.dark {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icons-network {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary-white-color);
+}
