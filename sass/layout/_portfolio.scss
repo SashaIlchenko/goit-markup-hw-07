@@ -17,15 +17,15 @@
     transition: background-color var(--transition-dur-fun),
         color var(--transition-dur-fun),
         box-shadow var(--transition-dur-fun);
-}
 
-.button-filter:hover,
-.button-filter:focus {
-    background-color: var(--accent-color);
-    color: var(--primary-white-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-        0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--primary-white-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 }
 
 .list-portfolio {
@@ -57,13 +57,18 @@
 
     color: var(--primary-text-color);
     transition: box-shadow var(--transition-dur-fun);
-}
 
-.link-portfolio:hover,
-.link-portfolio:focus {
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-        0px 4px 4px 0px rgba(0, 0, 0, 0.06),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    &:hover,
+    &:focus {
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+            0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+            0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    &:hover .overlay,
+    &:focus .overlay {
+        transform: translateY(0%);
+    }
 }
 
 .portfolio-title {
@@ -105,9 +110,4 @@
     overflow: auto;
     transform: translateY(100%);
     transition: transform var(--transition-dur-fun);
-}
-
-.link-portfolio:hover .overlay,
-.link-portfolio:focus .overlay {
-    transform: translateY(0%);
 }

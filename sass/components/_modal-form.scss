@@ -32,13 +32,18 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding-left: 42px;
     transition: border-color var(--transition-dur-fun);
-}
 
-.form-input:focus,
-.form-input:hover {
-    outline: none;
-    border-color: var(--accent-color);
-    cursor: pointer;
+    &:focus,
+    &:hover {
+        outline: none;
+        border-color: var(--accent-color);
+        cursor: pointer;
+    }
+
+    &:focus+.form-icons,
+    &:hover+.form-icons {
+        fill: var(--accent-color);
+    }
 }
 
 .form-icons {
@@ -48,11 +53,6 @@
     transform: translateY(-50%);
     fill: var(--title-text-color);
     transition: fill var(--transition-dur-fun);
-}
-
-.form-input:focus+.form-icons,
-.form-input:hover+.form-icons {
-    fill: var(--accent-color);
 }
 
 .input-feedback {
@@ -65,17 +65,17 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     color: var(--primary-text-color);
     transition: border-color var(--transition-dur-fun);
-}
 
-.input-feedback::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    color: rgba(117, 117, 117, 0.5);
-}
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.17;
+        color: rgba(117, 117, 117, 0.5);
+    }
 
-.input-feedback:focus {
-    outline: none;
-    border-color: var(--accent-color);
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
 }
 
 .form-button {
@@ -112,14 +112,14 @@
 
 .input-checkbox {
     appearance: none;
-}
 
-.input-checkbox:checked+.policy-label .checked-icon {
-    fill: var(--accent-color);
-    border: none;
-}
+    &:checked+.policy-label .checked-icon {
+        fill: var(--accent-color);
+        border: none;
+    }
 
-.input-checkbox:focus+.policy-label .checked-icon {
-    /* border: 1px solid var(--title-text-color); */
-    outline: #212121;
+    &:focus+.policy-label .checked-icon {
+        border: 1px solid var(--title-text-color);
+        outline: #212121;
+    }
 }

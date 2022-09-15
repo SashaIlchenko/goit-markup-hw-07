@@ -2,6 +2,11 @@
     background-color: var(--hero-footer-color);
     padding-top: 60px;
     padding-bottom: 60px;
+
+    .logo {
+        display: block;
+        margin-bottom: 20px;
+    }
 }
 
 .logo-contacts {
@@ -16,6 +21,12 @@
     text-decoration: none;
     color: var(--primary-white-color);
     transition: color var(--transition-dur-fun);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
 }
 
 .items-footer:not(:last-child) {
@@ -27,7 +38,6 @@
     align-items: baseline;
 }
 
-
 .footer-link {
     display: block;
     line-height: 1.71;
@@ -36,6 +46,11 @@
     color: var(--grey-shadow);
 
     transition: color var(--transition-dur-fun);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .network {

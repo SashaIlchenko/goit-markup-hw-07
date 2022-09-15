@@ -22,12 +22,12 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     transition: color var(--transition-dur-fun), border-color var(--transition-dur-fun);
-}
 
-.link-partners:hover,
-.link-partners:focus {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+    }
 }
 
 .company-logo {

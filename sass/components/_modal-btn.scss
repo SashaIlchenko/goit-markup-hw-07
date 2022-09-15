@@ -11,10 +11,10 @@
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: fill var(--transition-dur-fun);
-}
 
-.close-modal:hover,
-.close-modal:focus {
-    fill: var(--accent-color);
-    cursor: pointer;
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        cursor: pointer;
+    }
 }

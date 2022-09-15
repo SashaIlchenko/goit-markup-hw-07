@@ -10,6 +10,10 @@
     border-radius: 4px;
 }
 
+.item-staff:not(:last-child) {
+    margin-right: 30px;
+}
+
 .staff-cards {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -41,12 +45,6 @@
     fill: currentColor;
 }
 
-.social-link:hover,
-.social-link:focus {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-}
-
 .social-link {
     display: flex;
     justify-content: center;
@@ -59,6 +57,12 @@
 
     transition: color var(--transition-dur-fun),
         background-color var(--transition-dur-fun);
+
+    &:hover,
+    &:focus {
+        color: var(--primary-white-color);
+        background-color: var(--accent-color);
+    }
 }
 
 .position {
