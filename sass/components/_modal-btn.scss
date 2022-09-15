@@ -1,0 +1,20 @@
+.close-modal {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: fill var(--transition-dur-fun);
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    fill: var(--accent-color);
+    cursor: pointer;
+}
