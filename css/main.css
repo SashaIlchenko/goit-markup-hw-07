@@ -1,5 +1,7 @@
 @charset "UTF-8";
 :root {
+  --secondary-font-family: "Raleway";
+  --primary-font-family: "Roboto";
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196F3;
@@ -25,6 +27,12 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.checked-icon, .close-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -108,10 +116,10 @@ img {
 }
 
 .logo {
-  font-family: "Raleway";
-  font-weight: 700;
+  font-family: var(--secondary-font-family);
   font-size: 26px;
-  line-height: 1.2;
+  font-weight: 700;
+  line-height: 1.3846153846;
   text-decoration: none;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: var(--title-text-color);
@@ -155,9 +163,6 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -210,9 +215,6 @@ img {
   border-color: var(--accent-color);
   cursor: pointer;
 }
-.form-input:focus + .form-icons, .form-input:hover + .form-icons {
-  fill: var(--accent-color);
-}
 
 .form-icons {
   position: absolute;
@@ -221,6 +223,9 @@ img {
   transform: translateY(-50%);
   fill: var(--title-text-color);
   transition: fill var(--transition-dur-fun);
+}
+.form-input:focus + .form-icons, .form-input:hover + .form-icons {
+  fill: var(--accent-color);
 }
 
 .input-feedback {
@@ -263,9 +268,6 @@ img {
 }
 
 .checked-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-right: 7px;
   width: 16px;
   height: 15px;
@@ -275,10 +277,6 @@ img {
   cursor: pointer;
   transition: border-color var(--transition-dur-fun0);
 }
-
-.input-checkbox {
-  appearance: none;
-}
 .input-checkbox:checked + .policy-label .checked-icon {
   fill: var(--accent-color);
   border: none;
@@ -286,6 +284,10 @@ img {
 .input-checkbox:focus + .policy-label .checked-icon {
   border: 1px solid var(--title-text-color);
   outline: #212121;
+}
+
+.input-checkbox {
+  appearance: none;
 }
 
 .main-header {
