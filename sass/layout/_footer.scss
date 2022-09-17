@@ -43,16 +43,18 @@
     color: var(--primary-white-color);
 }
 
-.network {
+.footer__title {
+    @include font ($fw: 700, $lh: 16px);
     color: var(--primary-white-color);
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .dark {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.icons-network {
+.social-link__icon-dark {
     width: 20px;
     height: 20px;
     fill: var(--primary-white-color);
