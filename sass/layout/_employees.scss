@@ -5,7 +5,6 @@
 
 .item-staff {
     background-color: var(--primary-white-color);
-    /* Тут має бути ще тінь, але як я зрозуміла поки що це не обов'язково робити*/
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
 }
@@ -22,15 +21,11 @@
 .staff-title {
     margin-bottom: 10px;
     color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.36;
+    @include font(16px, 500, 22px);
 }
 
 .list-social-network {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %align;
     gap: 10px;
 }
 
@@ -46,9 +41,7 @@
 }
 
 .social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     color: var(--logo-color);
 
     width: 100%;
@@ -67,6 +60,5 @@
 
 .position {
     margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font (16px, 400, 19px);
 }

@@ -49,10 +49,8 @@
 }
 
 .mail-tell-header {
-    display: flex;
+    @extend %align;
     gap: 30px;
-    justify-content: center;
-    align-items: center;
     margin-left: auto;
 }
 
@@ -62,8 +60,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    font-weight: 500;
-    line-height: 1.14;
+    @include font ($fw: 500, $lh: 16px);
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     fill: currentColor;

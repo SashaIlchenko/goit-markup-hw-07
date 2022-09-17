@@ -1,15 +1,12 @@
 .why-title {
     margin-bottom: 10px;
     color: var(--title-text-color);
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
+    @include font (14px, 700, 16px);
     text-transform: uppercase;
 }
 
 .about {
-    font-size: 14px;
-    line-height: 1.71;
+    @include font (14px, 400, 24px);
 }
 
 .list-about {
@@ -23,9 +20,7 @@
 }
 
 .thumb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %align;
 
     margin-bottom: 30px;
     width: 270px;

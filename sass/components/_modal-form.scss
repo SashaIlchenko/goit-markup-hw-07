@@ -10,9 +10,7 @@
 
 .form-title {
     margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
+    @include font (20px, 700, 23px);
     text-align: center;
     color: var(--title-text-color);
 }
@@ -20,9 +18,8 @@
 .form-label {
     display: block;
     margin-bottom: 4px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
+    @include font (12px, 400, 14px);
+
 }
 
 .form-input {
@@ -87,8 +84,7 @@
     display: flex;
     align-items: center;
     margin-left: 13px;
-    font-weight: 400;
-    line-height: 1.7;
+    @include font (14px, 400, 24px);
     color: var(--primary-text-color);
 }
 

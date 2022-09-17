@@ -16,7 +16,6 @@
 .address-link {
     display: block;
     font-style: normal;
-    /*исходный текст был курсивным, поэтому поставила font-style: normal */
     line-height: 1.71;
     text-decoration: none;
     color: var(--primary-white-color);
@@ -40,7 +39,7 @@
 
 .footer-link {
     display: block;
-    line-height: 1.71;
+    @include font ($lh: 24px);
     font-style: normal;
     /*исходный текст был курсивным, поэтому поставила font-style: normal */
     color: var(--grey-shadow);
