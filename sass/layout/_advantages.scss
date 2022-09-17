@@ -1,11 +1,11 @@
-.why-title {
+.list-about__title {
     margin-bottom: 10px;
     color: var(--title-text-color);
     @include font (14px, 700, 16px);
     text-transform: uppercase;
 }
 
-.about {
+.list-about__text {
     @include font (14px, 400, 24px);
 }
 
@@ -15,11 +15,11 @@
     gap: 30px;
 }
 
-.item-about {
+.list-about__item {
     flex-basis: calc((100% - 90px)/4);
 }
 
-.thumb {
+.list-about__thumb {
     @extend %align;
 
     margin-bottom: 30px;
@@ -30,7 +30,7 @@
     border-radius: 4px;
 }
 
-.logo-why {
+.list-about__logo {
     width: 70px;
     height: 70px;
 }

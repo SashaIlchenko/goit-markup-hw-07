@@ -12,7 +12,7 @@
 
 }
 
-.nav-link {
+.list-nav__link {
     position: relative;
     display: inline-block;
 
@@ -74,8 +74,8 @@
     }
 }
 
-.mail-icon,
-.icon-tell {
+.contacts__mail-icon,
+.contacts__icon-tell {
     margin-right: 10px;
 
     &:hover,
